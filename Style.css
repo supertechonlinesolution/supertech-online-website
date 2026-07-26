@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#0b3d91;
+    color:#fff;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.logo p{
+    font-size:14px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0b3d91,#1565c0);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e67e00;
+}
+
+.services{
+    padding:70px 40px;
+}
+
+.services h2,
+#about h2,
+#contact h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0b3d91;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:45px;
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+#about,
+#contact{
+    padding:70px 40px;
+    text-align:center;
+}
+
+footer{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.logo h2{
+    font-size:18px;
+}
+
+}
